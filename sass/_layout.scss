@@ -19,10 +19,23 @@
 .main {
   margin: 0 auto;
   padding: 0 2em;
+  @media only screen and (max-width: $bp-small) {
+    padding: 0 1em;
+  }
 
   &__form {
     display: flex;
     align-items: baseline;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0 1em;
+
+      & > *:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
   }
 
   &__form-field {
@@ -34,11 +47,35 @@
     border-radius: 2.7rem;
     border: 0.1rem solid var(--color-secondary-pale-blue);
     width: 95%;
+    font-family: inherit;
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
+
+    &:focus {
+      outline: none;
+    }
+    &:focus::placeholder {
+      visibility: hidden;
+    }
 
     &::placeholder {
       color: var(--color-secondary-pale-blue);
       font-size: 1.6rem;
       font-weight: 300;
+    }
+  }
+
+  &__form-error-text {
+    font-size: 1.4rem;
+    padding-left: 2em;
+    margin-top: 1rem;
+    color: var(--color-secondary-light-red);
+    display: none;
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 2rem;
+      padding: 0;
+      text-align: center;
     }
   }
 
@@ -65,12 +102,23 @@
       margin-right: 1.2rem;
     }
   }
+  &__social-media-link {
+    &:hover .footer__social-media-icon {
+      fill: #fff;
+      background-color: var(--color-primary-blue);
+    }
+  }
   &__social-media-icon {
-    width: 3rem;
-    height: 3rem;
+    width: 3.2rem;
+    height: 3.2rem;
     box-shadow: 0 0px 3px var(--color-secondary-pale-blue);
     border-radius: 50%;
-    padding: 0.3em;
+    padding: 0.4em;
     fill: var(--color-primary-blue);
+    transition: all 0.1s;
+  }
+
+  &__attribution {
+    text-align: center;
   }
 }

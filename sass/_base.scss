@@ -6,6 +6,9 @@
   --color-neutral-dark-blue: hsl(209, 33%, 12%);
 }
 
+$bp-small: 37.5em; //bp at 600px
+$bp-smallest: 25em; //bp at 400px
+
 *,
 *::before,
 *::after {

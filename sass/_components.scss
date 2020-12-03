@@ -2,11 +2,24 @@
   margin: auto 0;
   max-width: 80rem;
   padding: 4em 2em;
+  @media only screen and (max-width: $bp-small) {
+    padding: 4em 0;
+  }
+}
+
+.heading-primary {
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3.5rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 3rem;
+  }
 }
 
 .btn {
   cursor: pointer;
   border: none;
+  font-family: inherit;
 }
 
 .btn-submit {
@@ -16,4 +29,21 @@
   color: #fff;
   font-size: 1.6rem;
   flex: 0 0 35%;
+  box-shadow: 0 3px 4px var(--color-primary-blue);
+  transition: all 0.1s;
+  backface-visibility: hidden;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(1px);
+    box-shadow: none;
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
