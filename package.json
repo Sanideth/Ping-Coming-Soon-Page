@@ -1,0 +1,27 @@
+{
+  "name": "ping-coming-soon-page",
+  "version": "1.0.0",
+  "description": "Ping Coming Soon Page from frontendmentor.io challenges",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.css -o css/style.prefixed.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanideth/Ping-Coming-Soon-Page.git"
+  },
+  "author": "Sandro Bochorishvili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sanideth/Ping-Coming-Soon-Page/issues"
+  },
+  "homepage": "https://github.com/Sanideth/Ping-Coming-Soon-Page#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.0.4",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.1.13",
+    "postcss-cli": "^8.3.0"
+  }
+}
