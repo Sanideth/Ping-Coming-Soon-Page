@@ -1,0 +1,19 @@
+.container {
+  margin: auto 0;
+  max-width: 80rem;
+  padding: 4em 2em;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+}
+
+.btn-submit {
+  background-color: var(--color-primary-blue);
+  padding: 1em 1em;
+  border-radius: 2.7rem;
+  color: #fff;
+  font-size: 1.6rem;
+  flex: 0 0 35%;
+}
