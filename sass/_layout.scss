@@ -120,5 +120,14 @@
 
   &__attribution {
     text-align: center;
+    & a {
+      color: var(--color-primary-blue);
+      text-decoration: none;
+      transition: all 0.1s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 }

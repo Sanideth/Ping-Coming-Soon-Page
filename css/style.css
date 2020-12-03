@@ -110,6 +110,12 @@ body {
     transition: all 0.1s; }
   .footer__attribution {
     text-align: center; }
+    .footer__attribution a {
+      color: var(--color-primary-blue);
+      text-decoration: none;
+      transition: all 0.1s; }
+      .footer__attribution a:hover {
+        opacity: 0.8; }
 
 .container {
   margin: auto 0;
@@ -143,7 +149,8 @@ body {
   transition: all 0.1s;
   backface-visibility: hidden; }
   .btn-submit:hover {
-    transform: translateY(-1px); }
+    transform: translateY(-1px);
+    opacity: 0.9; }
   .btn-submit:active {
     transform: translateY(1px);
     box-shadow: none;
