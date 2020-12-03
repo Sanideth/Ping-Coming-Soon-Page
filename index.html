@@ -23,10 +23,10 @@
     <main class="main">
       <form action="#" class="main__form u-mb-b">
         <div class="main__form-field">
-          <input type="email" placeholder="Your email address..." aria-label="Email Input" class="main__input">
-          <p class="main__form-error-text">Please provide a valid email address</p>
+          <input type="email" placeholder="Your email address..." name="email" id="email" aria-label="Email Input" class="main__input">
+          <p class="main__form-error-text" id="error-text">Please provide a valid email address</p>
         </div>
-        <button class="btn btn-submit">Notify Me</button>
+        <button class="btn btn-submit" id="btn-submit" aria-label="Form Submit Button">Notify Me</button>
       </form>
       <div class="main__img-container u-mb-b">
         <img src="./img/illustration-dashboard.png" alt="Dashboard Illustration" class="main__img">
@@ -60,17 +60,6 @@
       </p>
     </footer>
   </div>
-
-   
-
-  
-
-  
-
-  
-
- 
-    
-
+<script src="./index.js"></script>
 </body>
 </html>

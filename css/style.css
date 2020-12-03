@@ -159,3 +159,10 @@ body {
 
 .u-mb-b {
   margin-bottom: 10rem; }
+
+.active {
+  display: block; }
+
+.red {
+  border-color: var(--color-secondary-light-red);
+  color: var(--color-secondary-light-red); }
